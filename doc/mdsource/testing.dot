@@ -1,0 +1,7 @@
+digraph g {
+"how to test code" -> "is the code functional?" -> {"Yes" "No"}
+"Yes" -> "easy! test it"
+"No" -> "hard to test" -> "reduce to functional" -> "is the code functional?"
+# Formatting
+ {rank = same; "Yes", "easy! test it", "is the code functional?"}
+}
