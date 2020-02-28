@@ -1,8 +1,6 @@
 # Goal
 
-The goal here is to get 100% of the lines and branches unit-tested in the code `TrigMath.h`.
-
-By branches, we mean that both the `true` and `false` paths of every expression in every `if` statement should be reached. This means that you will have more than one test per method. 
+The goal here is to get 100% of the lines unit-tested in the code `TrigMath.h`.
 
 ## How-To
 
@@ -26,6 +24,7 @@ TODO Add background on NaN
 
 * TODO Add more info
 
+<!--
 Add these lines to `~/.lcovrc`:
 
 ```
@@ -33,12 +32,12 @@ genhtml_branch_coverage = 1
 lcov_branch_coverage = 1
 lcov_excl_br_line = LCOV_EXCL_BR_LINE|CHECK|REQUIRE
 ```
+-->
 
 ### MS Visual Studio
 
 * Install OpenCppCoverage from the Market Place
 * TODO Add more info
-
 
 ## Run from command line
 
