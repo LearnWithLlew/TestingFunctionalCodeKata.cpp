@@ -12,6 +12,26 @@ Get it to pass. Then write some more tests. You should never be changing anythin
 
 It is highly suggested that you use some form of code coverage tool in the editor, so that you can see what your next step is.
 
+## Setting up and running with code coverage
+
+### CLion on Unix
+
+* TODO Add more info
+
+Add these lines to `~/.lcovrc`:
+
+```
+genhtml_branch_coverage = 1
+lcov_branch_coverage = 1
+lcov_excl_br_line = LCOV_EXCL_BR_LINE|CHECK|REQUIRE
+```
+
+### MS Visual Studio
+
+* Install OpenCppCoverage from the Market Place
+* TODO Add more info
+
+
 ## Run from command line
 
 These are the two commands I run to on my computer
