@@ -5,5 +5,6 @@ set(SOURCE_FILES
         main.cpp
         LegacyTest.cpp
         Test.cpp
+        PersonTest.cpp
         )
 add_executable(TestingFunctionalCodeKataTests ${SOURCE_FILES} )
