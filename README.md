@@ -1,4 +1,8 @@
-# Goal
+# Scenario
+
+The `TrigMath.h` file has been in production for a long time now, and proven to be a reliable library. We want to get it properly tested, as we want to make some changes in the future.
+
+## Goal
 
 The goal here is to get 100% of the lines unit-tested in the code `TrigMath.h`.
 
