@@ -12,6 +12,14 @@ Get it to pass. Then write some more tests. You should never be changing anythin
 
 It is highly suggested that you use some form of code coverage tool in the editor, so that you can see what your next step is.
 
+### How to Test NaNs
+
+TODO Add background on NaN
+
+```c++
+    CHECK(std::isnan(NAN));
+```
+
 ## Setting up and running with code coverage
 
 ### CLion on Unix
