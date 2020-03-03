@@ -3,6 +3,7 @@
 
 #include <map>
 #include <string>
+#include <ostream>
 
 template<class Key, class Value>
 std::vector<Key> getKeys(const std::map<Key, Value>& map)
@@ -15,16 +16,12 @@ std::vector<Key> getKeys(const std::map<Key, Value>& map)
     return keys;
 }
 
-// TODO Fix this - remove insertion into std
-namespace std
+template<class Key, class Value>
+std::ostream& operator<<(std::ostream& os,
+                         const std::pair<Key, Value>& pair)
 {
-    template<class Key, class Value>
-    std::ostream& operator<<(std::ostream& os,
-                             const std::pair<Key, Value>& pair)
-    {
-        os << "(" << pair.first << ", " << pair.second << ")";
-        return os;
-    }
+    os << "(" << pair.first << ", " << pair.second << ")";
+    return os;
 }
 
 
