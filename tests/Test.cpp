@@ -1,22 +1,13 @@
 #include <catch2/catch.hpp>
 #include "ApprovalTests.hpp"
 #include "../code/TrigMath.h"
+#include "../code/MapUtilities.h"
 
 #include <map>
 
 using namespace ApprovalTests;
 typedef double (TrigMath::*function)(double);
 
-template<class Key, class Value>
-std::vector<Key> getKeys(const std::map<Key, Value>& map)
-{
-    std::vector<Key> keys;
-    for( const auto& pair : map)
-    {
-        keys.push_back(pair.first);
-    }
-    return keys;
-}
 
 TEST_CASE("Test Sin") {
     TrigMath math;
