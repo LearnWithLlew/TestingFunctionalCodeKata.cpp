@@ -7,9 +7,10 @@
 using namespace ApprovalTests;
 typedef double (TrigMath::*function)(double);
 
-std::vector<std::string> getKeys(const std::map<std::string, function>& map)
+template<class Key, class Value>
+std::vector<Key> getKeys(const std::map<Key, Value>& map)
 {
-    std::vector<std::string> keys;
+    std::vector<Key> keys;
     for( const auto& pair : map)
     {
         keys.push_back(pair.first);
