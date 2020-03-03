@@ -15,7 +15,7 @@ TEST_CASE("Test Sin")
     functions["Cos"] = &TrigMath::Cos;
     std::vector<double> numbers{0.5, 1.5, 2.0};
     ApprovalTests::CombinationApprovals::verifyAllCombinations(
-        [&](auto key, double d) { return (math.*functions[key])(d); },
-        getKeys(functions),
+        [&](auto pair, double d) { return (math.*pair.second)(d); },
+        functions,
         numbers);
 }
