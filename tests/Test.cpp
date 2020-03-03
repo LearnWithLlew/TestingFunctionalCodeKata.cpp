@@ -9,13 +9,12 @@ using namespace ApprovalTests;
 
 TEST_CASE("Test Sin")
 {
-    TrigMath math;
+    std::vector<double> numbers{0.5, 1.5, 2.0};
     std::map<std::string, decltype(&TrigMath::Sin)> functions;
     functions["Sin"] = &TrigMath::Sin;
     functions["Cos"] = &TrigMath::Cos;
-    std::vector<double> numbers{0.5, 1.5, 2.0};
     ApprovalTests::CombinationApprovals::verifyAllCombinations(
-        [&](auto pair, double d) { return (math.*pair.second)(d); },
+        [&](auto pair, double d) { return (TrigMath().*pair.second)(d); },
         functions,
         numbers);
 }
